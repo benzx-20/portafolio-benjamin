@@ -1,0 +1,362 @@
+:root {
+  --bg-color: #f8fafc;
+  --surface-color: #ffffff;
+  --accent-color: #2563eb;
+  --secondary-color: #0891b2;
+  --text-primary: #1e293b;
+  --text-secondary: #64748b;
+  --border-color: #e2e8f0;
+  --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --transition: all 0.2s ease-in-out;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+  line-height: 1.6;
+}
+
+section {
+  padding: 80px 5%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Barra de navegación superior (fija al bajar) */
+header {
+  position: sticky;
+  top: 0;
+  background: white;
+  padding: 15px 5%;
+  border-bottom: 2px solid var(--accent-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  box-shadow: var(--shadow);
+}
+
+.logo {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--accent-color);
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  color: var(--accent-color);
+}
+
+/* Bloque de mi presentación inicial */
+.portada {
+  text-align: center;
+  padding: 100px 5%;
+  background: linear-gradient(to bottom, #eff6ff, white);
+}
+
+.portada-subtitle {
+  color: var(--accent-color);
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.portada-title {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.highlight {
+  color: var(--accent-color);
+}
+
+.portada-description {
+  max-width: 700px;
+  margin: 0 auto 30px;
+  color: var(--text-secondary);
+}
+
+.btn {
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-weight: 600;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: var(--accent-color);
+  color: white;
+  border: none;
+}
+
+.btn-primary:hover {
+  background: #1d4ed8;
+}
+
+/* Estilos para que los proyectos se acomoden en cards de cuadrícula */
+.section-title {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.project-card {
+  background: white;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.project-img {
+  height: 200px;
+  background: #f1f5f9;
+  overflow: hidden;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.project-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover .project-img img {
+  transform: scale(1.05);
+}
+
+.project-content {
+  padding: 20px;
+}
+
+.project-name {
+  margin-bottom: 10px;
+}
+
+.project-desc {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+}
+
+.project-link {
+  color: var(--accent-color);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+/* Diseño exclusivo de la caja donde detallo mi proyecto final */
+.case-study {
+  background: white;
+  border: 1px solid var(--border-color);
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+}
+
+.case-study-header {
+  margin-bottom: 30px;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 20px;
+}
+
+.case-study-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 40px;
+}
+
+.case-study-main section {
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.case-study-main section:last-child {
+  margin-bottom: 0;
+}
+
+.case-study-main h4 {
+  margin: 20px 0 10px;
+  color: var(--accent-color);
+}
+
+.sidebar-box {
+  background: #f8fafc;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.skill-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skill-pill {
+  background: #dbeafe;
+  color: #1e40af;
+  padding: 4px 12px;
+  border-radius: 15px;
+  font-size: 0.8rem;
+}
+
+/* Estructura final con redes sociales y caja de correo */
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.contact-form {
+  background: white;
+  padding: 30px;
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+}
+
+/* Pie de página con mi nombre y año */
+footer {
+  text-align: center;
+  padding: 40px;
+  background: #1e293b;
+  color: white;
+}
+
+@media (max-width: 768px) {
+
+  .case-study-grid,
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Configuración de la capa oscura detrás de las fotos expandidas */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 2000;
+  padding-top: 50px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(15, 23, 42, 0.95);
+  backdrop-filter: blur(10px);
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: auto;
+  max-width: 90%;
+  max-height: 85vh;
+  border-radius: 12px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  object-fit: contain;
+}
+
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: white;
+  padding: 20px 0;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.close-modal {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 30px;
+  font-weight: bold;
+  transition: 0.3s;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.5);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.close-modal:hover {
+  color: #fff;
+  background: var(--accent-color);
+  transform: rotate(90deg);
+}
+
+/* Efecto @keyframes para que la foto se amplíe con suavidad */
+.modal-content,
+#caption {
+  animation-name: zoom;
+  animation-duration: 0.4s;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .modal-content {
+    width: 95%;
+  }
+}

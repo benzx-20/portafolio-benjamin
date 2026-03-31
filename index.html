@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio Profesional | Talento Junior Tech</title>
+  <meta name="description"
+    content="Portafolio técnico de un desarrollador junior enfocado en soluciones escalables, buenas prácticas y aprendizaje continuo.">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">Benjamin Gonzalez</div>
+    <nav>
+      <ul>
+        <li><a href="#inicio" class="active">Sobre Mí</a></li>
+        <li><a href="#proyectos">Mis Proyectos</a></li>
+        <li><a href="#caso-estudio">Caso de Estudio</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- seccion de portada -->
+    <section id="inicio" class="portada">
+      <div class="portada-subtitle">Estudiante de Informática</div>
+      <h1 class="portada-title">Hola, soy <span class="highlight">Benjamin Gonzalez</span></h1>
+      <p class="portada-description">
+        Egresado de Computación e Informática con mención en Ciberseguridad. Actualmente desarrollando habilidades en
+        desarrollo de software y gestión técnica.
+      </p>
+
+      <div class="portada-btns" style="display: flex; gap: 20px;">
+        <a href="#proyectos" class="btn btn-primary">Ver Proyectos <i class="fas fa-arrow-right"></i></a>
+        <a href="#contacto" class="btn"
+          style="border: 1px solid var(--border-color); color: var(--text-primary);">Contáctame</a>
+      </div>
+    </section>
+
+    <!-- listado con mis tres ejercicios principales de programacion -->
+    <section id="proyectos" class="projects">
+      <h2 class="section-title">Proyectos Destacados</h2>
+      <p class="section-subtitle">Una selección de los trabajos realizados durante mi formación.</p>
+
+      <div class="projects-grid">
+        <!-- proyecto #1: gestion de SPA -->
+        <article class="project-card">
+          <div class="project-img">
+            <img src="img/proyecto1.png" alt="BookList SPA - Catálogo de Libros">
+          </div>
+          <div class="project-content">
+            <span class="project-tag">Frontend Development / SPA</span>
+            <h3 class="project-name">BookList SPA - Catálogo de Libros</h3>
+            <p class="project-desc">Desarrollo de una Single Page Application (SPA) interactiva para la gestión de
+              libros.
+              Incluye un formulario para registrar nuevos títulos (autor, categoría y sinopsis) y un panel dinámico que
+              renderiza la lista actual,
+              permitiendo eliminar registros o consultar detalles en tiempo real.</p>
+            <div class="project-links">
+              <a href="#" class="project-link"
+                onclick="alert('El repositorio de este proyecto se encuentra en modo privado temporalmente.'); return false;">GitHub
+                <i class="fab fa-github"></i></a>
+              <a href="#" class="project-link"
+                onclick="alert('La demo interactiva no está disponible en esta versión estática del portafolio.'); return false;">Demo
+                <i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+        </article>
+
+        <!-- proyecto #2: lista de tareas y fetch de API -->
+        <article class="project-card">
+          <div class="project-img">
+            <img src="img/proyecto2.png" alt="TaskFlow - Gestor de Tareas Avanzado">
+          </div>
+          <div class="project-content">
+            <span class="project-tag">Frontend Development / API Integration</span>
+            <h3 class="project-name">TaskFlow - Gestor de Tareas Avanzado</h3>
+            <p class="project-desc">Aplicación web para la gestión eficiente de tareas (To-Do List). Permite agregar,
+              completar y eliminar elementos dinámicamente en el DOM.
+              Destaca por incorporar registro de timestamps (hora de creación),
+              temporizadores de expiración en tiempo real para cada tarea, y la capacidad de consumir una API externa
+              para cargar datos de prueba.</p>
+            <div class="project-links">
+              <a href="#" class="project-link"
+                onclick="alert('El repositorio de este proyecto se encuentra en modo privado temporalmente.'); return false;">GitHub
+                <i class="fab fa-github"></i></a>
+              <a href="#" class="project-link">Doc <i class="fas fa-book"></i></a>
+            </div>
+          </div>
+        </article>
+
+        <!-- proyecto #3: reactividad y estado local -->
+        <article class="project-card">
+          <div class="project-img">
+            <img src="img/proyecto3.jpg" alt="Catálogo Dinámico en Vue.js">
+          </div>
+          <div class="project-content">
+            <span class="project-tag">Frontend Frameworks / SPA</span>
+            <h3 class="project-name">Catálogo Dinámico en Vue.js</h3>
+            <p class="project-desc">Aplicación web desarrollada con Vue.js para la visualización de productos.
+              Implementa un sistema de filtrado por categorías en tiempo real, funcionalidad de "favoritos" con un
+              contador dinámico que actualiza el estado global, y un switch para alternar entre modo claro y oscuro
+              (Dark Mode). Interfaz construida a partir de componentes modulares y reactivos.</p>
+            <div class="project-links">
+              <a href="#" class="project-link"
+                onclick="alert('El repositorio de este proyecto se encuentra en modo privado temporalmente.'); return false;">GitHub
+                <i class="fab fa-github"></i></a>
+              <a href="#" class="project-link"
+                onclick="alert('La demo interactiva no está disponible en esta versión estática del portafolio.'); return false;">Demo
+                <i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- caso de estudio: aca explico mis reflexiones del proyecto final de certificacion -->
+    <section id="caso-estudio" class="case-study-outer">
+      <h2 class="section-title">Caso de Estudio: Proyecto de Curso</h2>
+      <p class="section-subtitle">A continuación detallo el desafío más importante que realicé durante mi formación.</p>
+
+      <div class="case-study">
+        <div class="case-study-header">
+          <div class="case-study-title-group">
+            <h3>Catálogo Dinámico de Productos en Vue.js</h3>
+            <p>Proyecto Académico | Computación e Informática</p>
+          </div>
+
+          <div class="case-study-stats">
+            <div class="stat-item">
+              <span class="stat-value">3</span>
+              <span class="stat-label">Módulos Vuex</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-value">2</span>
+              <span class="stat-label">Pruebas UI</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-value">0</span>
+              <span class="stat-label">Recargas</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="case-study-grid">
+          <div class="case-study-main">
+            <section>
+              <h4>Descripción de la Actividad</h4>
+              <p>Este fue un proyecto académico donde construí una aplicación web de una sola página (SPA) para simular
+                una tienda. El objetivo principal era poner en práctica mis conocimientos de Vue.js y aprender a
+                organizar mejor el código en proyectos más grandes.</p>
+            </section>
+
+            <section>
+              <h4>El Desafío Principal</h4>
+              <p>A medida que la aplicación crecía, me di cuenta de que pasar datos (como los favoritos o los filtros)
+                de un componente a otro se volvía muy confuso y desordenado. Además, quería asegurarme de que al agregar
+                algo nuevo, no se rompiera lo que ya funcionaba.</p>
+            </section>
+
+            <section>
+              <h4>Solución Propuesta</h4>
+              <p>Para solucionar el desorden de datos, investigué e implementé Vuex. Creé una "tienda" central de datos
+                dividida en tres módulos (productos, filtros y favoritos). Para el tema de los errores, pude dar mis
+                primeros pasos en Testing: configuré Jest para hacer pruebas básicas en mis tarjetas de productos y
+                Cypress para simular clics en la página.</p>
+            </section>
+
+            <section>
+              <h4>Principales Aprendizajes</h4>
+              <ul style="color: var(--text-secondary); margin-left: 20px;">
+                <li style="margin-bottom: 8px;"><strong>Manejo de Estado (Vuex):</strong> Entendí la diferencia entre
+                  guardar un dato solo en un componente y guardarlo de forma global para que toda la página lo pueda
+                  usar.</li>
+                <li style="margin-bottom: 8px;"><strong>Introducción al Testing:</strong> Aprendí que probar el código
+                  automáticamente con Jest y Cypress ahorra mucho tiempo frente a probar todo manualmente en el
+                  navegador.</li>
+                <li><strong>Orden y Arquitectura:</strong> Mejoré muchísimo mi forma de estructurar carpetas y separar
+                  la parte visual de la lógica.</li>
+              </ul>
+            </section>
+
+            <section>
+              <h4>Justificación de Selección</h4>
+              <p>Elegí este proyecto para mi portafolio porque marca un antes y un después en mi aprendizaje. Pasé de
+                hacer páginas sencillas a entender cómo se estructura una aplicación web moderna por dentro,
+                enfrentándome a herramientas reales de la industria.</p>
+            </section>
+
+            <section>
+              <h4>Métricas de Impacto</h4>
+              <ul style="color: var(--text-secondary); margin-left: 20px;">
+                <li style="margin-bottom: 8px;"><strong>Organización:</strong> Logré separar con éxito toda la lógica de
+                  datos en 3 módulos independientes de Vuex.</li>
+                <li style="margin-bottom: 8px;"><strong>Estabilidad:</strong> Escribí pruebas unitarias funcionales para
+                  los 2 componentes principales de la interfaz (ProductList y ProductCard).</li>
+                <li><strong>Experiencia de usuario:</strong> La página filtra productos y actualiza favoritos sin
+                  necesidad de recargar el navegador.</li>
+              </ul>
+            </section>
+
+          </div>
+
+          <div class="case-study-sidebar">
+            <div class="sidebar-box">
+              <h5>Herramientas Técnicas</h5>
+              <div class="skill-pills">
+                <span class="skill-pill">Vue.js y Vuex</span>
+                <span class="skill-pill">Introducción a Jest y Cypress</span>
+                <span class="skill-pill">Visual Studio Code</span>
+                <span class="skill-pill">Git / GitHub</span>
+              </div>
+            </div>
+
+            <div class="sidebar-box">
+              <h5>Habilidades Aplicadas</h5>
+              <div class="skill-pills">
+                <span class="skill-pill">Lógica de programación Frontend</span>
+                <span class="skill-pill">Estructuración de proyectos web</span>
+                <span class="skill-pill">Pruebas básicas de código (QA)</span>
+                <span class="skill-pill">Curiosidad y autoaprendizaje</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- area al final de la pagina para mis redes y el formulario estatico de correo -->
+    <section id="contacto">
+      <div class="contact-container">
+        <div class="contact-info">
+          <h2>¿Tienes un proyecto en <span class="highlight">mente?</span></h2>
+          <p>Estoy buscando oportunidades como Trainee / Junior para aportar valor y seguir creciendo profesionalmente.
+          </p>
+
+          <div style="margin-bottom: 30px;">
+            <h5 style="margin-bottom: 10px; color: var(--text-primary);">MIS REDES</h5>
+            <div class="social-links">
+              <a href="#" class="social-icon" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" class="social-icon" title="GitHub"><i class="fab fa-github"></i></a>
+              <a href="#" class="social-icon" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            </div>
+          </div>
+
+          <div>
+            <h5 style="margin-bottom: 10px; color: var(--text-primary);">UBICACIÓN</h5>
+            <p style="margin-bottom: 0;">Remoto / IV Región de Coquimbo, Chile</p>
+          </div>
+        </div>
+
+        <form class="contact-form">
+          <div class="form-group">
+            <label>Nombre Completo</label>
+            <input type="text" placeholder="Tu nombre...">
+          </div>
+          <div class="form-group">
+            <label>Email Profesional</label>
+            <input type="email" placeholder="email@ejemplo.com">
+          </div>
+          <div class="form-group">
+            <label>Mensaje</label>
+            <textarea rows="4" placeholder="¿En qué puedo ayudarte?"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width: 100%; border: none; margin-top: 10px;">Enviar
+            Mensaje</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 - Benjamin Gonzalez - Portafolio Educativo</p>
+  </footer>
+
+  <!-- este div oculto es capturado por Javascript para simular abrir la imagen tipo lightbox -->
+  <div id="imageModal" class="modal">
+    <span class="close-modal"><i class="fas fa-times"></i></span>
+    <img class="modal-content" id="imgFull">
+    <div id="caption"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

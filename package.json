@@ -1,0 +1,13 @@
+{
+  "name": "portafolio-benjamin",
+  "version": "1.0.0",
+  "description": "Portafolio estudiantil de Benjamin Gonzalez",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx serve .",
+    "serve": "npx serve ."
+  },
+  "keywords": [],
+  "author": "Benjamin Gonzalez",
+  "license": "ISC"
+}
